@@ -1,0 +1,64 @@
+{% extends "includes/header.html" %}
+{% load static %}
+{% block main %}
+    <!DOCTYPE html>
+    <html lang="en" class="no-js">
+    <body>
+    <div id="carousel-example-generic" class="carousel header" data-ride="carousel">
+        <div class="carousel-inner" role="listbox" style="height: 8cm">
+            <div class="item active" style="margin-top: -0.9cm">
+                <img class="img-responsive" src="{% static "img/1920x1080/01.jpg" %}" width="100" height="50"
+                     alt="Header-image-activities">
+                <div class="container">
+                    <div class="carousel-centered">
+                        <div class="margin-b-10" style="margin-top: -3cm">
+                            <h1 class="carousel-title" style="font-size: xx-large">Offshore</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- Testimonials -->
+    <div class="content-lg container" style="text-align: center">
+        <div class="row">
+
+            <img src="{% static "img/Offshore.jpg" %}" height="300"
+                 style="align-content: center">
+            <div class="col-sm-12" style="text-align: center">
+                <h2 style="margin-top: 1cm">Offshore Production</h2>
+                <!-- Swiper Wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <blockquote class="blockquote">
+                            <div class="margin-b-20"><strong>
+                                The complexity of offshore operations results from a host of factors including
+                                geography,
+                                hostile climate, and regulatory compliance. The pressure to produce optimally from
+                                existing
+                                resources and to explore new ones timely & cost effectively has made the offshore plant
+                                manager’s job extremely challenging.
+                                BGS’s offshore automation solutions comply with international, national, regional and
+                                corporate standards resulting in efficient
+                                operations while ensuring the safety of plant, personnel and equipment. The
+                                standardization
+                                of our engineering & design practices and a strict quality control is the secret recipe
+                                to
+                                our timely delivery and cost effectiveness..
+                            </strong>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="promo-section-img-right">
+            <img src="{% static "img/970x970/01.jpg" %}" alt="Content Image">
+        </div>
+    </div>
+    {% include "includes/footer.html" %}
+    </body>
+    </html>
+{% endblock %}

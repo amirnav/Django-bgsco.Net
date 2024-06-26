@@ -1,0 +1,64 @@
+{% extends "includes/header.html" %}
+{% load static %}
+{% block main %}
+    <!DOCTYPE html>
+    <html lang="en" class="no-js">
+    <body>
+    <div id="carousel-example-generic" class="carousel header" data-ride="carousel">
+        <div class="carousel-inner" role="listbox" style="height: 8cm">
+            <div class="item active" style="margin-top: -0.9cm">
+                <img class="img-responsive" src="{% static "img/1920x1080/01.jpg" %}" width="100" height="50"
+                     alt="Header-image-activities">
+                <div class="container">
+                    <div class="carousel-centered">
+                        <div class="margin-b-10" style="margin-top: -3cm">
+                            <h1 class="carousel-title" style="font-size: xx-large">Oil Pipeline, Bulk Storage &
+                                Pumping</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- Testimonials -->
+    <div class="content-lg container">
+        <div class="row" style="text-align: center">
+
+            <img src="{% static "img/Pipe.jpg" %}" height="300"
+                 style="align-content: center">
+            <div class="col-sm-12">
+                <h2 style="margin-top: 1cm">Oil Pipeline, Bulk Storage & Pumping</h2>
+                <!-- Swiper Wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <blockquote class="blockquote">
+                            <div class="margin-b-20"><strong>
+                                Operating a pipeline network safely and reliably is an enormous task that is getting
+                                more and more complex each day. The length of the pipeline system and the varied nature
+                                of geographical terrain add to the challenge faced by distribution companies. Investment
+                                to ensure compliance to heightened regulatory standards is increasing and in order to
+                                maintain sustained profitability the pressure to operate reliability and optimally has
+                                become immense.
+                                BGS’s pipeline, bulk storage and pumping automation solutions are designed as response
+                                to the aforementioned challenges. Our telemetry/ SCADA, electrical, control and
+                                instrumentation designs guarantee maximum reliability and availability of your system in
+                                the toughest operating scenarios. Whether a new system has to be setup or expansion &
+                                modification to existing installed base are required our vast experience enables us to
+                                deliver standard end-to-end automation solutions that are customized to your specific
+                                needs.
+                            </strong>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="promo-section-img-right">
+        <img src="{% static "img/1920x1080/01.jpg" %}" alt="Content Image">
+    </div>
+    {% include "includes/footer.html" %}
+    </body>
+    </html>
+{% endblock %}

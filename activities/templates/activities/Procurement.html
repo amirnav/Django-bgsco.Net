@@ -1,0 +1,95 @@
+{% extends "includes/header.html" %}
+{% load static %}
+{% block main %}
+    <!DOCTYPE html>
+    <html lang="en" class="no-js">
+    <body>
+    <div id="carousel-example-generic" class="carousel header" data-ride="carousel">
+        <div class="carousel-inner" role="listbox" style="height: 8cm">
+            <div class="item active" style="margin-top: -0.9cm">
+                <img class="img-responsive" src="{% static "img/1920x1080/01.jpg" %}" width="100" height="50"
+                     alt="Header-image-activities">
+                <div class="container">
+                    <div class="carousel-centered">
+                        <div class="margin-b-10" style="margin-top: -3cm">
+                            <h1 class="carousel-title" style="font-size: xx-large">Procurement</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- Testimonials -->
+
+    </div>
+    <!-- End Testimonials -->
+
+<div class="content-lg container">
+        <div class="row">
+            <div class="col-sm-9">
+                <h2>Leading to Profitability and Operational Efficiency</h2>
+                <!-- Swiper Wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <blockquote class="blockquote">
+                            <div class="margin-b-20"><strong>
+                                BGS is cooperating with EPC Companies to procurement
+                                projects needs in Electrical and Data Section to provide
+                                solutions completely Based on project objectives and also
+                                EPC Companies Benefits.
+                            </strong>
+                            </div>
+                            <img src="{% static "img/EPC.png" %}" width="400"
+                                 style="align-content: center;margin-left: 20cm;margin-top: -3.5cm;position:absolute;">
+                            <div class="margin-b-20">
+                                BGS procurement services outlines the strategy, process, resources, and governance for
+                                procuring goods and services required by Project. It connects short-term tactical
+                                purchasing with long-term EPC contractors Project strategy, Clients and suppliers.
+                                The BGS procurement management services also guide day-to-day actions while keeping
+                                focus on the overall objectives for Project.
+                                This job start by reviewing the technical documents of projects and also requirements
+                                of clients and make list of equipment needed in project and get offer from approved vendors,
+                                supervisory of Banking Jobs and also third part inspection , Transportation from factory to project site .
+                            </div>
+                        </blockquote>
+                        <blockquote class="blockquote"
+                                  >
+                            <div class="margin-b-20"><strong>
+                                Our Scope of work is :</strong>
+                            </div>
+                            <div class="margin-b-20">
+                                <ul>
+                                    <li class="margin-b-20">-	Electrical Equipment include HV, MV , LV </li>
+                                    <li class="margin-b-20">-	Motors & Pumps </li>
+                                    <li class="margin-b-20">-	Power Transformers </li>
+                                    <li class="margin-b-20">-	Communication Systems </li>
+                                    <li class="margin-b-20">-	SCADA & Automation Systems </li>
+                                    <li class="margin-b-20">-	Field Instrument Devices </li>
+                                    <li class="margin-b-20">-	Solar Systems </li>
+                                    <li class="margin-b-20">-	Cables & Cable Structures </li>
+                                    <li class="margin-b-20">-	Valves & Metal Casting </li>
+                                    <li class="margin-b-20">-	Safety Systems and Equipment </li>
+                                </ul>
+                            </div>
+                        </blockquote>
+
+                    </div>
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-testimonials-pagination"></div>
+                <!-- End Swiper Testimonials -->
+            </div>
+        </div>
+    </div>
+    <!-- End Testimonials -->
+    </div>
+
+    <!-- Pagination -->
+    <div class="swiper-testimonials-pagination"></div>
+    <!-- End Swiper Testimonials -->
+
+    {% include "includes/footer.html" %}
+    </body>
+    </html>
+{% endblock %}

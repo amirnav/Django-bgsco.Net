@@ -1,0 +1,68 @@
+{% extends "includes/header.html" %}
+{% load static %}
+{% block main %}
+    <!DOCTYPE html>
+    <html lang="en" class="no-js">
+    <body>
+    <div id="carousel-example-generic" class="carousel header" data-ride="carousel">
+        <div class="carousel-inner" role="listbox" style="height: 8cm">
+            <div class="item active" style="margin-top: -0.9cm">
+                <img class="img-responsive" src="{% static "img/1920x1080/01.jpg" %}" width="100" height="50"
+                     alt="Header-image-activities">
+                <div class="container">
+                    <div class="carousel-centered">
+                        <div class="margin-b-10" style="margin-top: -3cm">
+                            <h1 class="carousel-title" style="font-size: xx-large">Water & Waste Water</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- Testimonials -->
+    <div class="content-lg container" style="text-align: center">
+        <div class="row">
+
+            <img src="{% static "img/Water.jpg" %}" height="300"
+                 style="align-content: center">
+            <div class="col-sm-12" style="text-align: center;margin-top: 1cm">
+                <h2>Automation & SCADA solutions for water and wastewater industry</h2>
+                <!-- Swiper Wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <blockquote class="blockquote">
+                            <div class="margin-b-20" style="margin-top: 1cm"><strong>
+                                BGS Offer Complex automation and control solutions for all types of water processes:
+                                desalination, water pumping, distribution irrigation, industrial water treatment, waste
+                                water treatment, waterways and coastal protection.
+
+                                As the consumer expectations rise, those working in the water industry face pressures to
+                                improve water quality and energy efficiency, preserve scarce resources and minimize
+                                leakage.
+
+                                BGS Automation Solutions offer high operational security, maximum availability, remote
+                                maintenance possibility and an easy and quick way to upgrade to a new generation of
+                                control systems.
+                                Our automation solutions provide users with a comprehensive view of the plant by
+                                integrating data from all plant areas and systems, including remote SCADA systems.
+
+                                The control system’s open architecture can seamlessly consolidate and rationalize plant
+                                data and enhance operator response to changing conditions, improving both plant safety
+                                and uptime.
+                            </strong>
+                            </div>
+                            <br>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="promo-section-img-right">
+        <img src="{% static "img/970x970/01.jpg" %}" alt="Content Image">
+    </div>
+    {% include "includes/footer.html" %}
+    </body>
+    </html>
+{% endblock %}

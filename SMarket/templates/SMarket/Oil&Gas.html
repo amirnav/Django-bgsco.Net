@@ -1,0 +1,95 @@
+{% extends "includes/header.html" %}
+{% load static %}
+{% block main %}
+    <!DOCTYPE html>
+    <html lang="en" class="no-js">
+    <body>
+    <div id="carousel-example-generic" class="carousel header" data-ride="carousel">
+        <div class="carousel-inner" role="listbox" style="height: 8cm">
+            <div class="item active" style="margin-top: -0.9cm">
+                <img class="img-responsive" src="{% static "img/1920x1080/01.jpg" %}" width="100" height="50"
+                     alt="Header-image-activities">
+                <div class="container">
+                    <div class="carousel-centered">
+                        <div class="margin-b-10" style="margin-top: -3cm">
+                            <h1 class="carousel-title" style="font-size: xx-large">Oil and Gas</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- Our Exceptional Solutions -->
+    <div class="bg-color-sky-light" data-auto-height="true">
+        <div class="content-lg container">
+            <br>
+            <div class="row row-space-1 margin-b-2">
+                <div class="col-sm-4 sm-margin-b-2">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
+                        <div class="service" data-height="height">
+                            <div class="service-element">
+                                <i class=""></i>
+                            </div>
+                            <div class="">
+                                <h3>Offshore Production</h3>
+                                <p class="margin-b-5 service-info"
+                                   style="-webkit-align-items: center">The complexity of offshore operations results
+                                    from a host of factors including geography ...</p>
+                                <a class="link" href="{% url "ServedMarket:Offshore" %}">Read More</a>
+                                <img class="service-info" src="{% static "img/Offshore.jpg" %}"
+                                     style="align-content: initial;padding-top: 1cm;margin-top: 1.5cm" width="300"
+                                     height="200">
+                            </div>
+                            <a href="{% url "ServedMarket:Offshore" %}" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 sm-margin-b-2">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".2s">
+                        <div class="service" data-height="height">
+                            <div class="service-element">
+                                <i class="viewsitelink"></i>
+                            </div>
+                            <div class="">
+                                <h3>Onshore Production</h3>
+                                <p class="margin-b-5 service-info">
+                                    In the face of growing energy demand, depleting resources and the end of “easy oil”
+                                    era, ...</p>
+                                <a class="link" href="{% url "ServedMarket:Onshore" %}">Read More</a>
+                                <img class="service-info" src="{% static "img/Onshore.png" %}"
+                                     style="align-content: initial;padding-top: 1cm; margin-top: 1.2cm" width="300"
+                                     height="200">
+                            </div>
+                            <a href="{% url "ServedMarket:Onshore" %}" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
+                        <div class="service" data-height="height">
+                            <div class="">
+                                <h3>Oil Pipeline, Bulk Storage & Pumping</h3>
+                                <p class="margin-b-5 service-info">Operating a pipeline network safely and reliably is
+                                    an enormous task that is getting more and more</p>
+                                <a class="link" href="{% url "ServedMarket:Pipe" %}">Read More</a>
+                                <img class="service-info" src="{% static "img/Pipe.jpg" %}"
+                                     style="align-content: initial;padding-top: 1cm; margin-top: 0.5cm" width="300"
+                                     height="200">
+                            </div>
+                            <a href="{% url "ServedMarket:Pipe" %}" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+        </div>
+        <!-- End Service -->
+    </div>
+    <div class="promo-section-img-right">
+        <img class="img-responsive" src="{% static "img/970x970/01.jpg" %}" alt="Content Image">
+    </div>
+    {% include "includes/footer.html" %}
+    </body>
+    </html>
+{% endblock %}

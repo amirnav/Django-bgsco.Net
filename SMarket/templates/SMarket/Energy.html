@@ -1,0 +1,88 @@
+{% extends "includes/header.html" %}
+{% load static %}
+{% block main %}
+    <!DOCTYPE html>
+    <html lang="en" class="no-js">
+    <body>
+    <div id="carousel-example-generic" class="carousel header" data-ride="carousel">
+        <div class="carousel-inner" role="listbox" style="height: 8cm">
+            <div class="item active" style="margin-top: -0.9cm">
+                <img class="img-responsive" src="{% static "img/1920x1080/01.jpg" %}" width="100" height="50"
+                     alt="Header-image-activities">
+                <div class="container">
+                    <div class="carousel-centered">
+                        <div class="margin-b-10" style="margin-top: -3cm">
+                            <h1 class="carousel-title" style="font-size: xx-large">Energy</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- Testimonials -->
+    <div class="content-lg container" style="text-align: center">
+        <div class="row">
+
+            <img src="{% static "img/Energy.png" %}" height="300"
+                 style="align-content: center">
+            <div class="col-sm-12" style="text-align: center;margin-top: 1cm">
+                <h2>Flexible Solutions for Power Grid and Power Substations</h2>
+                <!-- Swiper Wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <blockquote class="blockquote">
+                            <div class="margin-b-20" style="margin-top: 1cm"><strong>
+                                BGS Co. has a substantial history in the design and implementation of telecom and
+                                security networks for Power Plants and Power Substations.
+
+                                We offer products which are specifically suited for harsh environmental conditions
+                                normally associated with this industry, we can offer clients a solution that best fits
+                                their needs.
+                            </strong>
+                            </div>
+                            <div>
+                                <img src="{% static "img/Energy1.jpg" %}" height="300"
+                                     style="align-content: center;margin-top: 2cm">
+                            </div>
+                            <br>
+                            <div>
+                                <br>
+                                <br>
+                                Our staff are experienced in the design, integration and installation of a range
+                                telecom and security products required for the PowerGrid and Power Substations
+                                including:
+                            </div>
+                            <div class="margin-b-20">
+                                <ul>
+                                    <li class="margin-b-20">Optical and Microwave transmission multiplexers including
+                                        SDH, IP Transport, OTN, Multiservice IP/MPLS, Digital Microwave Radio.
+                                    </li>
+                                    <li class="margin-b-20">Access Equipment including voice and data Interfaces.</li>
+                                    <li class="margin-b-20">Voice & Data Systems including Corporate Voice Network,
+                                        Corporate LAN/WAN, Video Conferencing and Wireless Technology
+                                    </li>
+                                    <li class="margin-b-20">Security Solutions including CCTV, Perimeter Intrusion
+                                        Detection, Access Control and Cybersecurity
+                                    </li>
+                                    <li class="margin-b-20">Safety Solutions including Public Addressing/General Alarm
+                                        (PA/GA), Analog/Digital Radio (UHF/VHF/Marine).
+                                    </li>
+                                    <li class="margin-b-20">Outdoor & Indoor Cabling including Fiber and Copper
+                                        Structured Cabling.
+                                    </li>
+                                    <li class="margin-b-20">Site Infrastructure including Racks/Cabinets/Shelters,
+                                        Cables and Cable Management Systems.
+                                    </li>
+                                </ul>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include "includes/footer.html" %}
+    </body>
+    </html>
+{% endblock %}

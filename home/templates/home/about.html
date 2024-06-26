@@ -1,0 +1,198 @@
+{% extends "includes/header.html" %}
+{% load static %}
+{% block main %}
+    <!DOCTYPE html>
+    <html lang="en" class="no-js">
+    <body>
+    <div id="carousel-example-generic" class="carousel header" data-ride="carousel">
+        <div class="carousel-inner" role="listbox" style="height: 8cm">
+            <div class="item active" style="margin-top: -0.9cm">
+                <img class="img-responsive" src="{% static "img/1920x1080/01.jpg" %}" width="100" height="50"
+                     alt="Header-image-activities">
+                <div class="container">
+                    <div class="carousel-centered">
+                        <div class="margin-b-10" style="margin-top: -3cm;font-size: x-large">
+                            <h2 class="carousel-title" style="font-size: xx-large">About Us</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cAboutontent-lg container">
+        <div class="row margin-b-20">
+            <div class="col-sm-6">
+                <br>
+                <h2>BARSAM Global Systems</h2>
+            </div>
+        </div>
+        <!--// end row -->
+
+        <div class="row">
+            <div class="col-sm-7 sm-margin-b-50">
+                <div class="margin-b-30">
+                    <p>As a completely private group, in 2017 by a group of professional, experienced and expert
+                        engineers and managers, it started its activity as an executive contractor company in the field
+                        of oil and gas, petrochemical and power plant. In the early years of the establishment of the
+                        company, he was able to work in national and large projects as a contractor for the engineering
+                        and implementation of telecommunication, SCADA and dispatching systems.</p>
+                </div>
+                <p>In order to become an international company, Bersam has expanded its connections abroad and this
+                    cooperation has led to new activities with European companies in various projects inside and outside
+                    the country.</p>
+                <p>During the years of its activity, Barsam has completed several projects for employers such as
+                    "National Iranian Oil Company", "Oil Engineering and Development Company", "Iran Oil Pipelines and
+                    Telecommunications Company", "Tavanir Company and Regional Electric Companies", " Water and
+                    Wastewater", "Iran Gas Engineering and Development Company" and many other collections.</p>
+                <p>During more than a decade since the establishment of Barsam, this company has been able to carry out
+                    more than 80 projects in various sectors, including oil and gas, petrochemical , to successfully
+                    complete and deliver a power plant and electrical and industrial network in the form of design,
+                    supply and implementation in the field of dispatching and telemetry centers, optical fiber
+                    telecommunications.
+                    In order to improve the engineering power of the country and solve the problems of receiving
+                    software support from foreign companies in its projects, Barsam has started engineering and
+                    programming automation and SCADA software in accordance with international standards under the brand
+                    name TELESCADA, which with successful installation In a number of important and key positions, the
+                    transfer of personnel and obtaining the consent of the employers is currently being used.</p>
+                <p>In order to promote engineering culture and ethics and business development, Bersam has negotiated
+                    with engineering companies to create common solutions that can be presented to employers and
+                    introduced to international markets. This attitude has led to successful projects with a win-win
+                    approach. Bard has won in the country and is also ready and interested in developing this attitude
+                    and cooperation with other committed and ethical companies in the country.</p>
+            </div>
+            <div class="col-sm-4 col-sm-offset-1">
+                <img class="img-responsive" src="{% static "img/2 (2).png" %}" alt="Our Office">
+            </div>
+            <div class="col-sm-4 col-sm-offset-1">
+                <img class="img-responsive" src="{% static "img/3.jpg" %}" alt="Our Office">
+            </div>
+        </div>
+        <!--// end row -->
+    </div>
+    <!-- End About -->
+
+    <div class="bg-color-sky-light" data-auto-height="true">
+        <div class="content-lg container">
+            <h3>Activities:</h3>
+            <br>
+            <div class="row row-space-1 margin-b-2">
+                <div class="col-sm-4 sm-margin-b-2">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
+                        <div class="service" data-height="height">
+                            <div class="service-element">
+                                <i class=""></i>
+                            </div>
+                            <div class="">
+                                <h3>SCADA and automation</h3>
+                                <p class="margin-b-5 service-info"
+                                   style="-webkit-align-items: center">
+                                    <br>
+                                    <br>
+                                    is a category of software applications for controlling industrial processes</p>
+                                <img class="service-info" src="{% static "img/Scada.jpg" %}"
+                                     style="align-content: initial;padding-top: 1cm;margin-top: 1.5cm" width="300"
+                                     height="200">
+                            </div>
+                            <a href="{% url "activities:Skada" %}" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 sm-margin-b-2">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".2s">
+                        <div class="service" data-height="height">
+                            <div class="service-element">
+                                <i class="viewsitelink"></i>
+                            </div>
+                            <div class="">
+                                <h3>Telecommunication and Data Transmission Solutions</h3>
+                                <p class="margin-b-5 service-info">Is the digital transfer of data between two points,
+                                    in
+                                    other words data is sent from sender to a receiver</p>
+                                <img class="service-info" src="{% static "img/Telecommunication.jpg" %}"
+                                     style="align-content: initial;padding-top: 1cm; margin-top: 0.5cm" width="300"
+                                     height="200">
+                            </div>
+                            <a href="{% url "activities:TeleCom" %}" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
+                        <div class="service" data-height="height">
+                            <div class="">
+                                <h3>Industrial Data Center</h3>
+                                <p class="margin-b-5 service-info" style="padding-top: 1.6cm">An IDC is a pre-configured
+                                    solu on consis ng of servers, storage, switches, cable management, and a cabinet
+                                    that
+                                    runs your plant's produc on software in a virtualized environmen</p>
+                                <img class="service-info" src="{% static "img/IDA.jpg" %}"
+                                     style="align-content: initial;padding-top: 1cm; margin-top: -0.5cm" width="300"
+                                     height="200">
+                            </div>
+                            <a href="{% url "activities:IndDatCen" %}" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// end row -->
+
+            <div class="row row-space-1">
+                <div class="col-sm-4 sm-margin-b-2">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".4s">
+                        <div class="service" data-height="height">
+
+                            <div class="">
+                                <h3>Protective Relays and Electrical Protection</h3>
+                                <p class="margin-b-5 service-info">In electrical engineering, a protective relay is a
+                                    relay
+                                    device designed to trip a circuit breaker when a fault is detected</p>
+                                <img class="service-info" src="{% static "img/ProtectedRelays.jpg" %}"
+                                     style="align-content: initial;padding-top: 1cm; margin-top: 1.7cm" width="300"
+                                     height="200">
+                            </div>
+                            <a href="{% url "activities:ProtectRel" %}" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 sm-margin-b-2">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+                        <div class="service" data-height="height">
+                            <div class="">
+                                <h3>Participation In The Project Overseas</h3>
+                                <p class="margin-b-5 service-info">the management of projects internationally or across
+                                    borders and cultures</p>
+                                <img class="service-info" src="{% static "img/Overseas.png" %}"
+                                     style="align-content: initial;padding-top: 1cm; margin-top: 1.7cm" width="300"
+                                     height="200">
+                            </div>
+                            <a href="{% url "activities:PartOverseas" %}" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".6s">
+                        <div class="service" data-height="height">
+                            <div class="">
+                                <h3>Supplying and Equipping The Oil and Power Project</h3>
+                                <p class="margin-b-5 service-info">
+                                    The process to develop oil, natural gas, oil sands, or coal resources is complex.
+                                    Every
+                                    energy development project—no matter what resource is involved—has a life cycle
+                                    consisting of four stages: initiate, construct, operate, and close</p>
+                                <img class="service-info" src="{% static "img/SupplyandEquip.jpg" %}"
+                                     style="align-content: initial;padding-top: 1cm" width="300"
+                                     height="200">
+                            </div>
+                            <a href="{% url "activities:Supply" %}" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include "includes/footer.html" %}
+    </body>
+    <!-- END BODY -->
+    </html>
+{% endblock %}

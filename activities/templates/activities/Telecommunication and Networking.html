@@ -1,0 +1,99 @@
+{% extends "includes/header.html" %}
+{% load static %}
+{% block main %}
+    <!DOCTYPE html>
+    <html lang="en" class="no-js">
+    <body>
+    <div id="carousel-example-generic" class="carousel header" data-ride="carousel">
+        <div class="carousel-inner" role="listbox" style="height: 8cm">
+            <div class="item active" style="margin-top: -0.9cm">
+                <img class="img-responsive" src="{% static "img/1920x1080/01.jpg" %}" width="100" height="50"
+                     alt="Header-image-activities">
+                <div class="container">
+                    <div class="carousel-centered">
+                        <div class="margin-b-10" style="margin-top: -3cm">
+                            <h1 class="carousel-title" style="font-size: xx-large">Telecommunication and
+                                Networking</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- Testimonials -->
+    <div class="content-lg container">
+        <div class="row">
+
+            <img src="{% static "img/Telecommunication.png" %}" height="300"
+                 style="align-content: center">
+            <div class="col-sm-9">
+                <h2 style="margin-top: 1cm">Wireless Networks</h2>
+                <!-- Swiper Wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <blockquote class="blockquote">
+                            <div class="margin-b-20"><strong>
+                                BGS provide various wireless solutions based on the customer requirements, network
+                                sensitivity,
+                                and reliability. IP networks, Industrial UHF/VHF radio networks, High capacity Microwave
+                                links
+                                for radio backbone systems are some of services which we can design, procure, and
+                                install for customers.
+                                The wide range of applications include point too point links for corporate backbone,
+                                industrial
+                                networking, government and society connectivity solutions, rural area communications,
+                                wireless ISPs
+                                and many other application. High quality, carrier class performance and industry leading
+                                reliability
+                                have been defining the policies in BGS since the beginning and it will continue to be
+                                the main
+                                approach in our development for new services.
+                            </strong>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <h2 style="margin-top: 1cm">Fiber Optic Solutions</h2>
+                <!-- Swiper Wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <blockquote class="blockquote">
+                            <div class="margin-b-20"><strong>
+                                Fiber optic backbone design for telecom & SCADA networks.
+                                Design and Installation of passive and active parts of an optic network with high
+                                performance and reliable brands.
+                                Offering wide range of fiber optic products such as Cable, high capacity ODF, media
+                                converters, optic IP based switches, SDH, and …
+                            </strong>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <h2 style="margin-top: 1cm">Power Line Carriers</h2>
+                <!-- Swiper Wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <blockquote class="blockquote">
+                            <div class="margin-b-20"><strong>
+                                Procurement, Installation, and commission of Digital and analogue PLC links for power
+                                application rely on using professional engineers.
+                            </strong>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Pagination -->
+    {% include "includes/footer.html" %}
+    </body>
+    </html>
+{% endblock %}

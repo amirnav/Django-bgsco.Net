@@ -1,0 +1,96 @@
+{% extends "includes/header.html" %}
+{% load static %}
+{% block main %}
+    <!DOCTYPE html>
+    <html lang="en" class="no-js">
+    <body>
+    <div id="carousel-example-generic" class="carousel header" data-ride="carousel">
+        <div class="carousel-inner" role="listbox" style="height: 8cm">
+            <div class="item active" style="margin-top: -0.9cm">
+                <img class="img-responsive" src="{% static "img/1920x1080/01.jpg" %}" width="100" height="50"
+                     alt="Header-image-activities">
+                <div class="container">
+                    <div class="carousel-centered">
+                        <div class="margin-b-10" style="margin-top: -3cm">
+                            <h1 class="carousel-title" style="font-size: xx-large">Employment Form</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-lg container">
+        <div class="row margin-b-40">
+            <div class="col-sm-8">
+                <h2>Please fill out the recruitment form carefully and send your resume in PDF format</h2>
+            </div>
+
+            <div class="footer-seperator">
+                <div class="content-lg container">
+                    <div class="row" style="text-align: center">
+                        <form method="post" id="HiringForm" action="" style="text-align: center" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div class="col-sm-5 sm-margin-b-30">
+                                <h2 class="color-white">Get in touch with us</h2>
+                                <input type="text" id="firstName" name="firstName"
+                                       class="form-control footer-input margin-b-20"
+                                       placeholder="First name:" required>
+                                <input type="text" id="lastName" name="lastName"
+                                       class="form-control footer-input margin-b-20"
+                                       placeholder="Last name:" required>
+                                <input type="text" id="fatherName" name="fatherName"
+                                       class="form-control footer-input margin-b-20"
+                                       placeholder="Father name:" required>
+                                <p class="form-control footer-input margin-b-20" style="text-align: left">
+                                    Birthday:<input class="form-control footer-input margin-b-20" type="date"
+                                                    id="birthdayDate" name="birthdayDate"></p>
+                                <br>
+                                <p class="form-control footer-input margin-b-20" style="text-align: left">Status of
+                                    Marriage:
+                                    <select name="marriageSituate" id="marriageSituate"
+                                            class="form-control footer-input margin-b-2">
+                                        <option>Please choose</option>
+                                        {% for title in form.marriageSituate %}
+                                            <option class="form-control footer-input margin-b-2"
+                                                    value="MR">{{ title }}</option>
+                                        {% endfor %}</select></p>
+                                <br>
+                                <input type="text" id="NationalId" name="NationalId"
+                                       class="form-control footer-input margin-b-20"
+                                       placeholder="National ID:" required>
+                                <input type="text" id="country:" name="country"
+                                       class="form-control footer-input margin-b-20"
+                                       placeholder="Country:" required>
+                                <input type="text" id="city:" name="city"
+                                       class="form-control footer-input margin-b-20"
+                                       placeholder="City:" required>
+                                <input type="text" id="email" name="email" class="form-control footer-input margin-b-20"
+                                       placeholder="Email:" required>
+                                <input type="text" id="phone" name="phone" class="form-control footer-input margin-b-20"
+                                       placeholder="Phone:" required>
+                                <input type="text" id="address" name="address"
+                                       class="form-control footer-input margin-b-20"
+                                       placeholder="Address:" required>
+                                <div>
+                                    <p class="form-control footer-input margin-b-20">Resume Upload
+                                    <ul class="boxshadow" style="background-color: #8192a4;color: #555759">
+                                        <label for="fileUpload">Choose file:</label>
+                                        {{ form.fileUpload }}
+                                    </ul>
+                                    </p>
+                                </div>
+                                <button type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Submit
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <!--// end row -->
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include "includes/footer.html" %}
+    </body>
+    </html>
+{% endblock %}

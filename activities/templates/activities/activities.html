@@ -1,0 +1,148 @@
+{% extends "includes/header.html" %}
+{% load static %}
+{% block main %}
+    <!DOCTYPE html>
+    <html lang="en" class="no-js">
+    <body>
+    <div id="carousel-example-generic" class="carousel header" data-ride="carousel">
+        <div class="carousel-inner" role="listbox" style="height: 8cm">
+            <div class="item active" style="margin-top: -0.9cm">
+                <img class="img-responsive" src="{% static "img/1920x1080/01.jpg" %}" width="100" height="50"
+                     alt="Header-image-activities">
+                <div class="container">
+                    <div class="carousel-centered">
+                        <div class="margin-b-10" style="margin-top: -3cm">
+                            <h2 class="carousel-title" style="font-size: xx-large">Activities</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- Our Exceptional Solutions -->
+    <div class="bg-color-sky-light" data-auto-height="true">
+        <div class="content-lg container">
+            <br>
+            <div class="row row-space-1 margin-b-2">
+                <div class="col-sm-4 sm-margin-b-2">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
+                        <div class="service" data-height="height">
+                            <div class="service-element">
+                                <i class=""></i>
+                            </div>
+                            <div class="">
+                                <h3>SCADA and Automation</h3>
+                                <p class="margin-b-5 service-info"
+                                   style="-webkit-align-items: center;padding-top: 1.7cm">
+                                    is a category of software applications for controlling industrial processes</p>
+                                <a class="link" href="{% url "activities:Skada" %}">Read More</a>
+                                <img class="service-info" src="{% static "img/Scada.jpg" %}"
+                                     style="align-content: initial;padding-top: 1cm;margin-top: 2cm" width="300"
+                                     height="200">
+                            </div>
+                            <a href="{% url "activities:Skada" %}" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 sm-margin-b-2">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".2s">
+                        <div class="service" data-height="height">
+                            <div class="service-element">
+                                <i class="viewsitelink"></i>
+                            </div>
+                            <div class="">
+                                <h3>Telecommunication and Data Transmission Solutions</h3>
+                                <p class="margin-b-5 service-info">Is the digital transfer of data between two points,
+                                    in other words data is sent from sender to a receiver</p>
+                                <a class="link" href="{% url "activities:TeleCom" %}">Read More</a>
+                                <img class="service-info" src="{% static "img/TeleCom1.jpg" %}"
+                                     style="align-content: initial;padding-top: 1cm; margin-top: 1.5cm" width="300"
+                                     height="200">
+                            </div>
+                            <a href="{% url "activities:TeleCom" %}" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
+                        <div class="service" data-height="height">
+                            <div class="">
+                                <h3>Industrial Data Center</h3>
+                                <p class="margin-b-5 service-info" style="padding-top: 1.6cm">An IDC is a pre-configured
+                                    solu on consis ng of servers, storage, switches, cable management, and a cabinet
+                                    that
+                                    runs your plant's produc on software in a virtualized environmen</p>
+                                <a class="link" href="#">Read More</a>
+                                <img class="service-info" src="{% static "img/IndustrialDataCenter.png" %}"
+                                     style="align-content: initial;padding-top: 1cm; margin-top: 0.5cm" width="300"
+                                     height="200">
+                            </div>
+                            <a href="{% url "activities:IndDatCen" %}" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-space-1">
+                <div class="col-sm-4 sm-margin-b-2">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".4s">
+                        <div class="service" data-height="height">
+
+                            <div class="">
+                                <h3>Protective Relays and Electrical Protection</h3>
+                                <p class="margin-b-5 service-info">In electrical engineering, a protective relay is a
+                                    relay
+                                    device designed to trip a circuit breaker when a fault is detected</p>
+                                <a class="link" href="#">Read More</a>
+                                <img class="service-info" src="{% static "img/ProtectionRelay1.jpg" %}"
+                                     style="align-content: initial;padding-top: 1cm; margin-top: 3.3cm" width="300"
+                                     height="200">
+                            </div>
+                            <a href="{% url "activities:ProtectRel" %}" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 sm-margin-b-2">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+                        <div class="service" data-height="height">
+                            <div class="">
+                                <h3>Participation In The Project Overseas</h3>
+                                <p class="margin-b-5 service-info">the management of projects internationally or across
+                                    borders and cultures</p>
+                                <a class="link" href="#">Read More</a>
+                                <img class="service-info" src="{% static "img/Overseas.png" %}"
+                                     style="align-content: initial;padding-top: 1cm; margin-top: 3cm" width="300"
+                                     height="200">
+                            </div>
+                            <a href="{% url "activities:PartOverseas" %}" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".6s">
+                        <div class="service" data-height="height">
+                            <div class="">
+                                <h3>Supplying and Equipping The Oil and Power Project</h3>
+                                <p class="margin-b-5 service-info" style="margin-top: 1cm">
+                                    The process to develop oil, natural gas, oil sands, or coal resources is complex.
+                                    Every
+                                    energy development project—no matter what resource is involved—has a life cycle
+                                    consisting of four stages: initiate, construct, operate, and close</p>
+                                <a class="link" href="#">Read More</a>
+                                <img class="service-info" src="{% static "img/SupplyandEquip.jpg" %}"
+                                     style="align-content: initial;padding-top: 1cm;margin-top: 1cm" width="300"
+                                     height="200">
+                            </div>
+                            <a href="{% url "activities:Supply" %}" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+    </div>
+    <!-- End Service -->
+    {% include "includes/footer.html" %}
+    </body>
+    </html>
+{% endblock %}

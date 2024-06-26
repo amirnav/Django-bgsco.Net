@@ -1,0 +1,57 @@
+{% extends "includes/header.html" %}
+{% load static %}
+{% block main %}
+    <!DOCTYPE html>
+    <html lang="en" class="no-js">
+    <body>
+    <div id="carousel-example-generic" class="carousel header" data-ride="carousel">
+        <div class="carousel-inner" role="listbox" style="height: 8cm">
+            <div class="item active" style="margin-top: -0.9cm">
+                <img class="img-responsive" src="{% static "img/1920x1080/01.jpg" %}" width="100" height="50"
+                     alt="Header-image-activities">
+                <div class="container">
+                    <div class="carousel-centered">
+                        <div class="margin-b-10" style="margin-top: -3cm">
+                            <h1 class="carousel-title" style="font-size: xx-large">Projects</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-lg container">
+        <div class="row margin-b-40">
+            <div class="col-sm-6">
+                <h2>Our Projects</h2>
+            </div>
+        </div>
+        <div class="row margin-b-50">
+            {% for pro in project %}
+
+                <div class="col-sm-4 sm-margin-b-50">
+                    <div class="margin-b-20">
+                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                            {% if pro.image %}
+                                <img class="img-responsive" src="{{ pro.image.url }}"
+                                     alt="Our Exceptional Solutions Image">
+                            {% endif %}
+                        </div>
+
+                        <h8>No:{{ pro.id }}</h8>
+                        <h3><a href="#">{{ pro.title }}</a> <span
+                                class="text-uppercase margin-l-20">{{ pro.year }}</span></h3>
+                        <p>{{ pro.description }}</p>
+                    </div>
+                </div>
+
+            {% endfor %}
+        </div>
+    </div>
+        <div class="promo-section-img-right">
+            <img src="{% static "img/970x970/01.jpg" %}" alt="Content Image">
+        </div>
+    </div>
+    {% include "includes/footer.html" %}
+    </body>
+    </html>
+{% endblock %}

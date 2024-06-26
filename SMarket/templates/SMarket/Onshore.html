@@ -1,0 +1,60 @@
+{% extends "includes/header.html" %}
+{% load static %}
+{% block main %}
+    <!DOCTYPE html>
+    <html lang="en" class="no-js">
+    <body>
+    <div id="carousel-example-generic" class="carousel header" data-ride="carousel">
+        <div class="carousel-inner" role="listbox" style="height: 8cm">
+            <div class="item active" style="margin-top: -0.9cm">
+                <img class="img-responsive" src="{% static "img/1920x1080/01.jpg" %}" width="100" height="50"
+                     alt="Header-image-activities">
+                <div class="container">
+                    <div class="carousel-centered">
+                        <div class="margin-b-10" style="margin-top: -3cm">
+                            <h1 class="carousel-title" style="font-size: xx-large">Onshore</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- Testimonials -->
+    <div class="content-lg container" style="text-align: center">
+        <div class="row">
+
+            <img src="{% static "img/Onshore.png" %}" height="300"
+                 style="align-content: center">
+            <div class="col-sm-12">
+                <h2 style="margin-top: 1cm">Onshore Production</h2>
+                <!-- Swiper Wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <blockquote class="blockquote">
+                            <div class="margin-b-20"><strong>
+                                In the face of growing energy demand, depleting resources and the end of “easy oil” era,
+                                E&P companies worldwide are seeking innovative ways of efficient production across the
+                                asset life cycle. On the one hand companies are faced with developing new fields in
+                                challenging remote areas, while on the other hand the pressure to sustain production
+                                from depleting resources is increasing.
+                                BGS’s automation solutions are the answer to your concerns of revenue maximization, cost
+                                minimization and safety of plant, personnel and equipment. BGS’s experience in providing
+                                automation and electrical solutions to onshore production facilities have evolved over
+                                the years through successful implementations worldwide.
+                            </strong>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="promo-section-img-right">
+        <img src="{% static "img/970x970/01.jpg" %}" alt="Content Image">
+    </div>
+
+    {% include "includes/footer.html" %}
+    </body>
+    </html>
+{% endblock %}

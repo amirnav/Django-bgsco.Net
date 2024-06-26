@@ -1,0 +1,92 @@
+{% extends "includes/header.html" %}
+{% load static %}
+{% block main %}
+    <!DOCTYPE html>
+    <html lang="en" class="no-js">
+    <body>
+    <div id="carousel-example-generic" class="carousel header" data-ride="carousel">
+        <div class="carousel-inner" role="listbox" style="height: 8cm">
+            <div class="item active" style="margin-top: -0.9cm">
+                <img class="img-responsive" src="{% static "img/1920x1080/01.jpg" %}" width="100" height="50"
+                     alt="Header-image-activities">
+                <div class="container">
+                    <div class="carousel-centered">
+                        <div class="margin-b-10" style="margin-top: -3cm">
+                            <h1 class="carousel-title" style="font-size: xx-large">Served Market</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- Our Exceptional Solutions -->
+    <div class="bg-color-sky-light" data-auto-height="true">
+        <div class="content-lg container">
+            <br>
+            <div class="row row-space-1 margin-b-2">
+                <div class="col-sm-4 sm-margin-b-2">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
+                        <div class="service" data-height="height">
+                            <div class="service-element">
+                                <i class=""></i>
+                            </div>
+                            <div class="">
+                                <h3>Oil and Gas</h3>
+                                <p class="margin-b-5 service-info"
+                                   style="-webkit-align-items: center">Offshore Production and Onshore Production</p>
+                                <a class="link" href="{% url "ServedM:OilGas" %}">Read More</a>
+                                <img class="service-info" src="{% static "img/Oil&Gas.jpg" %}"
+                                     style="align-content: initial;padding-top: 1cm;margin-top: 1.5cm" width="300"
+                                     height="200">
+                            </div>
+                            <a href="{% url "ServedM:OilGas" %}" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 sm-margin-b-2">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".2s">
+                        <div class="service" data-height="height">
+                            <div class="service-element">
+                                <i class="viewsitelink"></i>
+                            </div>
+                            <div class="">
+                                <h3>Energy</h3>
+                                <p class="margin-b-5 service-info">Flexible Solutions for Power Grid and Power
+                                    Substations</p>
+                                <a class="link" href="{% url "ServedM:Energy" %}">Read More</a>
+                                <img class="service-info" src="{% static "img/Energy.jpg" %}"
+                                     style="align-content: initial;padding-top: 1cm; margin-top: 1.5cm" width="300"
+                                     height="200">
+                            </div>
+                            <a href="{% url "ServedM:Energy" %}" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
+                        <div class="service" data-height="height">
+                            <div class="">
+                                <h3>Water and Wast Water</h3>
+                                <p class="margin-b-5 service-info">Automation & SCADA
+                                    solutions for water and wastewater industry</p>
+                                <a class="link" href="#">Read More</a>
+                                <img class="service-info" src="{% static "img/Water.jpg" %}"
+                                     style="align-content: initial;padding-top: 1cm; margin-top: 1.5cm" width="300"
+                                     height="200">
+                            </div>
+                            <a href="{% url "activities:IndDatCen" %}" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+        </div>
+        <!-- End Service -->
+    </div>
+    mo-section-img-right">
+    <img class="img-responsive" src="{% static "img/970x970/01.jpg" %}" alt="Content Image">
+    {% include "includes/footer.html" %}
+    </body>
+    </html>
+{% endblock %}

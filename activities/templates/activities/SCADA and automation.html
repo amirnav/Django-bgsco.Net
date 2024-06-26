@@ -1,0 +1,139 @@
+{% extends "includes/header.html" %}
+{% load static %}
+{% block main %}
+    <!DOCTYPE html>
+    <html lang="en" class="no-js">
+    <body>
+    <div id="carousel-example-generic" class="carousel header" data-ride="carousel">
+        <div class="carousel-inner" role="listbox" style="height: 8cm">
+            <div class="item active" style="margin-top: -1cm">
+                <img class="img-responsive" src="{% static "img/1920x1080/01.jpg" %}" width="100" height="50"
+                     alt="Header-image-activities">
+                <div class="container">
+                    <div class="carousel-centered">
+                        <div class="margin-b-10" style="margin-top: -3cm">
+                            <h1 class="carousel-title" style="font-size: xx-large">SCADA and automation</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- Testimonials -->
+    <div class="content-lg container">
+        <div class="row">
+            <div class="col-sm-9">
+                <h2>Flexible solutions for smart grids and Smart Industries</h2>
+                <!-- Swiper Wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <blockquote class="blockquote">
+                            <div class="margin-b-20"><strong>
+                                BGS Automation solution enables communication between devices and equipment in the
+                                energy distribution and supply system with the substation automation, thus permitting
+                                the development of smart grids.
+                            </strong>
+                            </div>
+                            <img src="{% static "img/ABB.png" %}" height="100"
+                                 style="align-content: center;margin-left: 25cm;margin-top: -3.5cm;position:absolute;">
+                            <div class="margin-b-20">
+                                We offer integrated Electrical & Automation solutions for Oil & Gas, Cement, Metal and
+                                other Manufacturing industries,
+                                Infrastructure as well as utilities like Power and Water. We have experience of over
+                                four decades in diverse
+                                segments and proven capabilities across the entire value chain – comprising Proposals,
+                                Design, Engineering, Project Planning,
+                                Integration, Software Development, Integrated testing / FAT, Commissioning / SAT and
+                                After-Sales Service.
+                            </div>
+                        </blockquote>
+                        <blockquote class="blockquote"
+                                    style="margin: 5cm;margin-right: 9cm;margin-left: 0.6cm;margin-top: 1cm">
+                            <div class="margin-b-20"><strong>
+                                Retrofitting Scada/ Rtu/Gateway : TECHNICAL SUPPORT</strong>
+                            </div>
+                            <div class="margin-b-20">
+                                We are committed to providing fast, courteous and professional post-sales technical
+                                support, product upgrades, and testing and repair services to our customers.
+                                Technical support engineers and technical specialists are standing by to assist you with
+                                your protection and control and substation automation product questions.
+                            </div>
+                            <blockquote class="blockquote"
+                                        style="position: absolute;margin-right: -20cm;margin-left: 20cm;margin-top: -7cm">
+                                <div class="margin-b-20"><strong>
+                                    SCADA and Energy Management Solution</strong>
+                                </div>
+                                <div class="margin-b-20">
+                                    Our SCADA and Energy Management Solution package is a very cost-effective solution
+                                    to monitor and control your application.
+                                </div>
+                                <div>
+                                    Our Intelligent and advanced system provides complete solution for monitoring and
+                                    management of energy in the industrial
+                                    plants along with control and automation. All the required hardware and software for
+                                    monitoring of energy are part of the system.
+                                </div>
+                                <br>
+                                <div>
+                                    The complete systems can be installed and configured based on user and application
+                                    requirements. Multiple verticals like electric
+                                    automation, process control, BMS, Fire & Safety along with Security can be
+                                    integrated. Our solutions are well known for Oil & Gas,
+                                    Power Transmission & Distribution, Alternative Energy Markets etc.
+                                </div>
+                            </blockquote>
+                        </blockquote>
+                        <blockquote class="blockquote"
+                                    style="margin: 5cm;margin-right: 9cm;margin-left: 0.6cm;margin-top: -4cm">
+                            <div class="margin-b-20"><strong>
+                                Integration of Master SCADA and operation from Master SCADA. The process
+                                involves:</strong>
+                            </div>
+                            <div class="margin-b-20">
+                                <ul>
+                                    <li class="margin-b-20">Engineering Data Preparation</li>
+                                    <li class="margin-b-20">Drawings</li>
+                                    <li class="margin-b-20">Survey Reports</li>
+                                    <li class="margin-b-20">Cable Laying and Termination</li>
+                                    <li class="margin-b-20">Handling</li>
+                                    <li class="margin-b-20">Erection</li>
+                                    <li class="margin-b-20">Testing</li>
+                                    <ul>
+                                        <li class="margin-b-20" style="font-size: 13px">Local Testing</li>
+                                        <li class="margin-b-20" style="font-size: 13px">End To End Testing</li>
+                                        <li class="margin-b-20" style="font-size: 13px">Commissioning</li>
+                                    </ul>
+                                    <li class="margin-b-20">Local Display Monitoring System Installation and associated
+                                        works are done in every premises of Remote Terminal Unit.
+                                    </li>
+                                    <li class="margin-b-20">Hardwiring</li>
+                                    <ul>
+                                        <li class="margin-b-20" style="font-size: 13px">Identifying and wiring of DI, DO
+                                            and AI points at C&R
+                                            Panel
+                                        </li>
+                                        <li class="margin-b-20" style="font-size: 13px">Ferruling</li>
+                                        <li class="margin-b-20" style="font-size: 13px">Routing</li>
+                                    </ul>
+                                    <li class="margin-b-20">Installation Termination and Commissioning of UPS and DCPS
+                                    </li>
+                                    <li class="margin-b-20">Conducting SAT (Site Acceptance Test) to ensure Accuracy of
+                                        all Signals, Commands and Analog Values.
+                                    </li>
+                                </ul>
+                            </div>
+                        </blockquote>
+
+                    </div>
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-testimonials-pagination"></div>
+                <!-- End Swiper Testimonials -->
+            </div>
+        </div>
+    </div>
+    {% include "includes/footer.html" %}
+    </body>
+    </html>
+{% endblock %}
